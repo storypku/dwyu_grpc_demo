@@ -1,0 +1,4 @@
+build:dwyu --aspects=//:dwyu.bzl%dwyu_aspect
+build:dwyu --build_tag_filters=-no-dwyu
+build:dwyu --output_groups=cc_dwyu_output
+try-import %workspace%/user.bazelrc
